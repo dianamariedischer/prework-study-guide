@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -18,21 +19,36 @@
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>The footer element is another section of visible content, but at the bottom of the webpage.</li>
-          <li>The meta element can be used for:
-            <ul>
+          <li>The meta element can be used for:</li>
+          <ul>
               <li>SEO</li>
               <li>Setting a character encoding system (UTF-8 is common)</li>
               <li>Viewport settings</li>
               <li>And like other stuff haha</li>
-            </ul>
-          </li>
+          </ul>
           <li>HTML creates the structure of the webpage.</li>
+          <li>A &lt;link> element connects to an external file, rel defines the relationship, and href
+            <br>points to the file location.
+          </li>
+          </li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Add CSS notes here</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>Structure of a CSS rule: selector/element to which the rules apply {property: value}</li>
+          <ul><li>"*" selector applies rule to all visible elements.</li></ul>
+          <li>If you assign block as the display value for an image, it will start the image on a new line.</li>
+          <li>You can create a class selector by preceding a word with a period. Any HTML element assigned 
+            to this class gains the properties from the CSS.
+          </li>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple 
+            effects separated by commas. A box shadow is described by X and Y offsets relative to the element, 
+            blur and spread radius, and color. In our example, the X offset is 5px and defines the width or 
+            extent of the shadow on the X axis (or to the right of the box); the Y offset is 10px and defines 
+            the extent on the Y axis (or just below the box).</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -40,12 +56,18 @@
         <h4>Commands:</h3>
         <ul>
           <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it
+            <br>-b creates a new branch
+          </li>
           <li>git checkout main: takes you back to the main branch</li>
-          <li>git pull origin branch-name: not really sure</li>
-          <li>git push origin branch-name: i think this pushes a branch up for review in github?</li>
-          <li>git add -A: adds all unstaged files to staging</li>
-          <li>git commit -m "decription of adjustments": commits staged files with description</li>
+          <li>git pull origin branch-name: pulls named branch into current branch? 
+            <br>Good practice to do this before pushing a branch for a pull request into main.
+          </li>
+          <li>git push origin branch-name: I think this pushes a branch up for review in github?</li>
+          <li>git add file-name: adds file to staging - Use -A for all.</li>
+          <li>git commit -m "decription of adjustments": commits staged files with a message
+            <br>When you add -m it allows you to attribute a message in quotes to the commit.
+          </li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
